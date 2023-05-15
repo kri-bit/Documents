@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)file:///C:/Users/Harik/OneDrive/Documents/form.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=&gt;, initial-scale=1.0">
+    <title>Glassmorphism</title>
+</head>
+<body>
+    <form name="myform">
+        <hi>Login</hi>
+        <label>username</label>
+        <input type="text" name="uname">
+        <label>passward</label>
+        <input type="passward" name="pass">
+
+        <input type="button" name="log" id="=logButton" value="login" onclick="myfunction()">
+        <script>
+        function myfunction(){
+        
+        
+            var un=document.forms["myform"]["uname"].value;
+            var pw=document.forms["myform"]["pass"].value;
+            if (un=="Dhasamuthu"&& pw=="1975") 
+            {
+                window.location.href="web.html";
+                
+            } else {
+                alert("invaid");
+                
+            }
+
+        }
+        </script>
+        <style>
+            body{
+                justify-content: center;
+                align-items: center;
+            }
+    
+
+    
+    *{
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+    body{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:linear-gradient(to right,#0b8852,#fc466b)
+
+    }
+    form{
+
+    
+        width: 25rem;
+        height: 28rem;
+        display:flex;
+        flex-direction: column;
+        background: rgba(225,225,225,0,06);
+        box-shadow: 0 8px 32px 0 rgba(135, 31, 31, 0.37);
+        border: radius 30px;
+        border-left: 1px solid rgba(225,225,225,.3);
+        border-top:1px solid rgba(225,225,225,.3);
+}
+        h1{
+            font-size :20px;
+            text-align:center ;
+            color: aliceblue;
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            letter-spacing: 2px;
+            margin-bottom: 5%;
+            opacity: .7;
+        }
+        label{
+            font-size: 20px;
+            color: white;
+            margin-left: 10%;
+            opacity: .8;
+            text-shadow: #fc466b;
+        }
+        input{
+            width: 80%;
+            margin: 5% auto;
+            margin-bottom: 8%;
+            border: none;
+            outline: none;
+        background: transparent;
+        border-bottom: 1px solid whitesmoke;
+
+        }
+        button{
+            width: 50px;
+            margin: 3% auto;
+            color:rebeccapurple;
+            font-size: 15px;
+            opacity: .7;
+            background: rgb(13, 0, 255);
+            
+        }
+
+    
+</style>
+            
+</form></body></html>
